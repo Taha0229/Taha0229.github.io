@@ -57,5 +57,5 @@ app.post('/', (req,res) =>{
 
 
 app.listen(port, (req, res) => {
-    console.log("server @ 8080");
+    console.log("server @ " + port);
 });
