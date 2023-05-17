@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const fetch = require("node-fetch")
 // import fetch from 'node-fetch';
+const port = process.env.PORT || 3000;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -55,6 +56,6 @@ app.post('/', (req,res) =>{
 
 
 
-app.listen(8080, (req, res) => {
+app.listen(port, (req, res) => {
     console.log("server @ 8080");
 });
