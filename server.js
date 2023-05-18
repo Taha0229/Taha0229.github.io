@@ -51,7 +51,7 @@ app.post('/', (req,res) =>{
 }).then(r => r.json()).catch(err => console.log(err))
 .then(result => console.log(result))
 
-    res.redirect('/')
+    res.redirect('https://vyapam.cgstate.gov.in/node/718')
 }) 
 
 
