@@ -29,86 +29,89 @@
     </head>
     <body>
         <section id="title">
-            <div class="container-fluid">
-                <!-- Nav Bar -->
-                <nav class="navbar navbar-expand-lg">
+            <!-- Nav Bar -->
+                <div class="container-fluid">
                     <a class="navbar-brand" href="/"
-                        ><img src="public/bit7.png" alt="bit_logo"
+                        ><img src="public/bit7.png" alt="bit_logo" class="img-fluid"
                     /></a>
-                </nav>
-            </div>
+                </div>
         </section>
 
         <section class="global-section-type-1">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <img src="public/logo_main.png" alt="" width="15%" />
-                    <form action="/" method="post">
-                        <div class="mb-4">
+            <div class="container-fluid">
+                <div class="row justify-content-center">
+                    <div class="col-lg-3 text-center col-sm-1 col-md-6 py-5">
+                        <img src="public/logo_main.png" class="img-fluid py-4" alt="" width="35%" />
+                        <form action="/" method="post">
+                            <div class="mb-4">
+                                <input
+                                    type="text"
+                                    placeholder="First Name"
+                                    class="form-control"
+                                    name="first_name"
+                                    id="validationCustom01"
+                                    required
+                                />
+                                <div class="valid-feedback">Looks good!</div>
+                                <input
+                                    type="text"
+                                    placeholder="Last Name"
+                                    class="form-control width"
+                                    name="last_name"
+                                />
+                            </div>
+    
                             <input
-                                type="text"
-                                placeholder="First Name"
-                                class="form-control"
-                                name="first_name"
-                                id="validationCustom01"
+                                type="email"
+                                name="email"
+                                placeholder="Enter Valid Email"
+                                class="form-control mb-4"
                                 required
                             />
-                            <div class="valid-feedback">Looks good!</div>
-                            <input
-                                type="text"
-                                placeholder="Last Name"
-                                class="form-control width"
-                                name="last_name"
-                            />
-                        </div>
-
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="Enter Valid Email"
-                            class="form-control mb-4"
-                            required
-                        />
-                        <div class="input-group mb-4">
-                            <span class="input-group-text" id="basic-addon1"
-                                >+91</span
+                            <div class="input-group mb-4">
+                                <span class="input-group-text" id="basic-addon1"
+                                    >+91</span
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter 10 digit mobile number"
+                                    aria-label="mobile number"
+                                    aria-describedby="basic-addon1"
+                                    name="phone"
+                                    required
+                                />
+                            </div>
+                            <select
+                                class="form-select mb-4"
+                                aria-label="Default select example "
+                                name="branch"
+                                required
                             >
-                            <input
-                                type="text"
-                                class="form-control"
-                                placeholder="Enter 10 digit mobile number"
-                                aria-label="mobile number"
-                                aria-describedby="basic-addon1"
-                                name="phone"
-                                required
-                            />
-                        </div>
-                        <select
-                            class="form-select mb-4"
-                            aria-label="Default select example "
-                            name="branch"
-                            required
-                        >
-                            <option selected>Select your branch</option>
-                            <option value="PCM">PCM</option>
-                            <option value="PCB">PCB</option>
-                            <option value="Commerce">Commerce</option>
-                            <option value="Humanities">Humanities</option>
-                        </select>
-                        <button type="submit" class="btn btn-primary">
-                            Submit
-                        </button>
-                        <button type="button" class="btn btn-outline-primary" onclick="myFunction()">
-                            Reset
-                        </button>
-            
-                    </form>
+                                <option selected>Select your branch</option>
+                                <option value="PCM">PCM</option>
+                                <option value="PCB">PCB</option>
+                                <option value="Commerce">Commerce</option>
+                                <option value="Humanities">Humanities</option>
+                            </select>
+                            <button type="submit" class="btn btn-primary">
+                                Submit
+                            </button>
+                            <button
+                                type="button"
+                                class="btn btn-outline-primary"
+                                onclick="myFunction()"
+                            >
+                                Reset
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
         <script>
             function myFunction() {
-                document.querySelector('form').reset();
+                document.querySelector("form").reset();
             }
         </script>
     </body>

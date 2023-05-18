@@ -4,7 +4,7 @@
 body {
     font-family: "DM Sans";
     overflow-x: hidden;
-    background-color: #C4DFDF;
+    background-color: #c4dfdf;
 }
 
 a {
@@ -12,37 +12,16 @@ a {
 }
 
 #title .container-fluid {
-    padding: 0 2%;
     border-bottom: #1e285f 2px solid;
     background-color: white;
+    padding: 1rem;
 }
 
-.global-section-type-1 {
-    padding: 4rem 24rem 0rem;
+form {
+    padding: 1rem;
 }
 
-
-
-form{
-    /* border: 2px solid red; */
-    padding: 4rem 18rem 18rem;
-}
-
-form :first-child{
+form :first-child {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 }
-
-form :first-child > input:focus{
-    border: 1px solid #1e285f;
-}
-
-
-
-
-
-
-/* form :nth-child(2){
-    width: 50%;
-} */
-
